@@ -1,0 +1,124 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="using:IPC.Views"
+        x:Class="IPC.Views.MainWindow"
+        Title="上位机"
+        Width="1257"
+        Height="774"
+        MinWidth="900"
+        MinHeight="600">
+  <TabControl x:Name="MainTabControl">
+    <TabItem Header="泵连接">
+      <Grid RowDefinitions="Auto,*,Auto" Margin="8">
+        <GroupBox Header="仪器连接" Margin="0,0,0,8">
+          <StackPanel Orientation="Horizontal" Spacing="8" Margin="8">
+            <TextBlock Text="端口号" VerticalAlignment="Center" />
+            <ComboBox x:Name="PortComboBox" Width="150" />
+            <Button x:Name="OpenCloseButton" Content="打开串口" Click="OpenCloseButton_OnClick" />
+            <Button Content="刷新端口" Click="RefreshPortsButton_OnClick" />
+          </StackPanel>
+        </GroupBox>
+
+        <Grid Grid.Row="1" ColumnDefinitions="*,8,*,8,*">
+          <GroupBox Header="泵A" Grid.Column="0" Margin="0,0,0,8">
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto" Margin="8" RowSpacing="8">
+              <StackPanel Orientation="Horizontal" Spacing="18">
+                <TextBlock Text="泵状态" Width="70" VerticalAlignment="Center" />
+                <views:TrafficLightControl />
+              </StackPanel>
+              <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="流速显示" Width="70" VerticalAlignment="Center" />
+                <TextBox x:Name="RateShow1" Text="0.000" Width="70" LostFocus="Numeric_OnLostFocus" />
+                <TextBlock Text="ml/min" VerticalAlignment="Center" />
+              </StackPanel>
+              <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="8">
+                <Button Tag="R1" Content="开启注射泵" Click="PumpOpenCloseButton_OnClick" />
+                <Button Tag="R1" Content="流量设定" Click="RateSetButton_OnClick" />
+              </StackPanel>
+              <StackPanel Grid.Row="3" Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="流速设定" Width="70" VerticalAlignment="Center" />
+                <TextBox x:Name="FlowRate1" Text="0.000" Width="70" LostFocus="Numeric_OnLostFocus" />
+                <TextBlock Text="ml/min" VerticalAlignment="Center" />
+              </StackPanel>
+            </Grid>
+          </GroupBox>
+
+          <GroupBox Header="泵B" Grid.Column="2" Margin="0,0,0,8">
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto" Margin="8" RowSpacing="8">
+              <StackPanel Orientation="Horizontal" Spacing="18">
+                <TextBlock Text="泵状态" Width="70" VerticalAlignment="Center" />
+                <views:TrafficLightControl />
+              </StackPanel>
+              <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="流速显示" Width="70" VerticalAlignment="Center" />
+                <TextBox x:Name="RateShow2" Text="0.000" Width="70" LostFocus="Numeric_OnLostFocus" />
+                <TextBlock Text="ml/min" VerticalAlignment="Center" />
+              </StackPanel>
+              <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="8">
+                <Button Tag="R2" Content="开启注射泵" Click="PumpOpenCloseButton_OnClick" />
+                <Button Tag="R2" Content="流量设定" Click="RateSetButton_OnClick" />
+              </StackPanel>
+              <StackPanel Grid.Row="3" Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="流速设定" Width="70" VerticalAlignment="Center" />
+                <TextBox x:Name="FlowRate2" Text="0.000" Width="70" LostFocus="Numeric_OnLostFocus" />
+                <TextBlock Text="ml/min" VerticalAlignment="Center" />
+              </StackPanel>
+            </Grid>
+          </GroupBox>
+
+          <GroupBox Header="泵C" Grid.Column="4" Margin="0,0,0,8">
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto" Margin="8" RowSpacing="8">
+              <StackPanel Orientation="Horizontal" Spacing="18">
+                <TextBlock Text="泵状态" Width="70" VerticalAlignment="Center" />
+                <views:TrafficLightControl />
+              </StackPanel>
+              <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="流速显示" Width="70" VerticalAlignment="Center" />
+                <TextBox x:Name="RateShow3" Text="0.000" Width="70" LostFocus="Numeric_OnLostFocus" />
+                <TextBlock Text="ml/min" VerticalAlignment="Center" />
+              </StackPanel>
+              <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="8">
+                <Button Tag="R3" Content="开启注射泵" Click="PumpOpenCloseButton_OnClick" />
+                <Button Tag="R3" Content="流量设定" Click="RateSetButton_OnClick" />
+              </StackPanel>
+              <StackPanel Grid.Row="3" Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="流速设定" Width="70" VerticalAlignment="Center" />
+                <TextBox x:Name="FlowRate3" Text="0.000" Width="70" LostFocus="Numeric_OnLostFocus" />
+                <TextBlock Text="ml/min" VerticalAlignment="Center" />
+              </StackPanel>
+            </Grid>
+          </GroupBox>
+        </Grid>
+
+        <GroupBox Grid.Row="2" Header="代码调试">
+          <Grid RowDefinitions="*,Auto" Margin="8" RowSpacing="8">
+            <TextBox x:Name="DebugReceiveTextBox" IsReadOnly="True" AcceptsReturn="True"
+                     TextWrapping="Wrap" />
+            <Grid Grid.Row="1" ColumnDefinitions="*,Auto" ColumnSpacing="8">
+              <TextBox x:Name="DebugSendTextBox" />
+              <Button Grid.Column="1" Content="发送" Width="80" Click="DebugSendButton_OnClick" />
+            </Grid>
+          </Grid>
+        </GroupBox>
+      </Grid>
+    </TabItem>
+
+    <TabItem Header="数据显示">
+      <Grid ColumnDefinitions="220,*" ColumnSpacing="8" Margin="8">
+        <GroupBox Header="数据展示">
+          <StackPanel Spacing="8" Margin="8">
+            <TextBox PlaceholderText="参数1" x:Name="Parameter1TextBox" />
+            <TextBox PlaceholderText="参数2" x:Name="Parameter2TextBox" />
+            <TextBox PlaceholderText="参数3" x:Name="Parameter3TextBox" />
+            <TextBox x:Name="DataSendTextBox" />
+            <Button Content="发送" Click="DataSendButton_OnClick" />
+          </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Column="1" Header="接收数据">
+          <TextBox x:Name="DataReceiveTextBox" IsReadOnly="True" AcceptsReturn="True"
+                   TextWrapping="Wrap" />
+        </GroupBox>
+      </Grid>
+    </TabItem>
+  </TabControl>
+</Window>
