@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IPC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98308b3bb140fba4f72f52697da7b5900d938c91")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f9c0f608521cdcb7105b7e633ea5da33d5187d4")]
+>>>>>>> font
 [assembly: System.Reflection.AssemblyProductAttribute("IPC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IPC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

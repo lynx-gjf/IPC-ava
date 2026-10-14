@@ -111,8 +111,12 @@
 /Users/lynx/Codes/IPC/obj/Debug/net10.0/ref/IPC.dll
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /Users/lynx/Codes/IPC/obj/Debug/net10.0/IPC.sourcelink.json
 =======
 >>>>>>> b4523ab5dc8a5e1747eefa24d2edd3b11a29e22a
 =======
 >>>>>>> b4523ab (Initial commit)
+=======
+/Users/lynx/Codes/IPC/obj/Debug/net10.0/IPC.sourcelink.json
+>>>>>>> font
