@@ -18,8 +18,11 @@ sealed class Program
             .UsePlatformDetect()
             .WithInterFont()
 <<<<<<< HEAD
+<<<<<<< HEAD
             .WithDeveloperTools()
 =======
 >>>>>>> b4523ab5dc8a5e1747eefa24d2edd3b11a29e22a
+=======
+>>>>>>> b4523ab (Initial commit)
             .LogToTrace();
 }

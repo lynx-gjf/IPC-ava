@@ -12,11 +12,17 @@ public partial class App : Application
     {
         AvaloniaXamlLoader.Load(this);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #if DEBUG
         this.AttachDeveloperTools();
 #endif
 >>>>>>> b4523ab5dc8a5e1747eefa24d2edd3b11a29e22a
+=======
+#if DEBUG
+        this.AttachDeveloperTools();
+#endif
+>>>>>>> b4523ab (Initial commit)
     }
 
     public override void OnFrameworkInitializationCompleted()
