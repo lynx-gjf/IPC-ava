@@ -13,15 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IPC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4523ab5dc8a5e1747eefa24d2edd3b11a29e22a")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
->>>>>>> b4523ab5dc8a5e1747eefa24d2edd3b11a29e22a
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
->>>>>>> b4523ab (Initial commit)
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18cedf1a2abe96135c7c16fab3e00312d7e0fe57")]
 [assembly: System.Reflection.AssemblyProductAttribute("IPC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IPC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
