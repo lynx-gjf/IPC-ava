@@ -109,4 +109,7 @@
 /Users/lynx/Codes/IPC/obj/Debug/net10.0/IPC.csproj.Up2Date
 /Users/lynx/Codes/IPC/obj/Debug/net10.0/IPC.genruntimeconfig.cache
 /Users/lynx/Codes/IPC/obj/Debug/net10.0/ref/IPC.dll
+<<<<<<< HEAD
 /Users/lynx/Codes/IPC/obj/Debug/net10.0/IPC.sourcelink.json
+=======
+>>>>>>> b4523ab5dc8a5e1747eefa24d2edd3b11a29e22a
