@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iO4eqAjgAW8=",
+  "dgSpecHash": "/mt0+poHXj8=",
   "success": true,
-  "projectFilePath": "/Users/lynx/Codes/IPC/IPC.csproj",
+  "projectFilePath": "/Users/lynx/Codes/IPC/IPC-ava/IPC.csproj",
   "expectedPackageFiles": [
     "/Users/lynx/.nuget/packages/avalonia/12.1.2/avalonia.12.1.2.nupkg.sha512",
     "/Users/lynx/.nuget/packages/avalonia.angle.windows.natives/2.1.27548.20260419/avalonia.angle.windows.natives.2.1.27548.20260419.nupkg.sha512",

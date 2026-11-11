@@ -3385,11 +3385,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynx/Codes/IPC/IPC.csproj",
+      "projectUniqueName": "/Users/lynx/Codes/IPC/IPC-ava/IPC.csproj",
       "projectName": "IPC",
-      "projectPath": "/Users/lynx/Codes/IPC/IPC.csproj",
+      "projectPath": "/Users/lynx/Codes/IPC/IPC-ava/IPC.csproj",
       "packagesPath": "/Users/lynx/.nuget/packages/",
-      "outputPath": "/Users/lynx/Codes/IPC/obj/",
+      "outputPath": "/Users/lynx/Codes/IPC/IPC-ava/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/lynx/.nuget/NuGet/NuGet.Config"
