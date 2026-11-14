@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/XtP4aHPeG0=",
+  "dgSpecHash": "/mt0+poHXj8=",
   "success": true,
   "projectFilePath": "/Users/lynx/Codes/IPC/IPC-ava/IPC.csproj",
   "expectedPackageFiles": [
@@ -52,9 +52,7 @@
     "/Users/lynx/.nuget/packages/skiasharp.nativeassets.webassembly/3.119.4/skiasharp.nativeassets.webassembly.3.119.4.nupkg.sha512",
     "/Users/lynx/.nuget/packages/skiasharp.nativeassets.win32/3.119.4/skiasharp.nativeassets.win32.3.119.4.nupkg.sha512",
     "/Users/lynx/.nuget/packages/system.io.ports/10.0.2/system.io.ports.10.0.2.nupkg.sha512",
-    "/Users/lynx/.nuget/packages/tmds.dbus.protocol/0.94.1/tmds.dbus.protocol.0.94.1.nupkg.sha512",
-    "/Users/lynx/.nuget/packages/microsoft.netcore.app.runtime.osx-arm64/10.0.11/microsoft.netcore.app.runtime.osx-arm64.10.0.11.nupkg.sha512",
-    "/Users/lynx/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-arm64/10.0.11/microsoft.aspnetcore.app.runtime.osx-arm64.10.0.11.nupkg.sha512"
+    "/Users/lynx/.nuget/packages/tmds.dbus.protocol/0.94.1/tmds.dbus.protocol.0.94.1.nupkg.sha512"
   ],
   "logs": []
 }
